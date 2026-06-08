@@ -1,0 +1,13 @@
+.timetable th {
+  background: #5b2bbf;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+}
+
+[data-theme="dark"] .timetable th {
+  background: #7442d6;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+}
