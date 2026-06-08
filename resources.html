@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recommended Resources | Payal Popli - EduHub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="brand-mark">PP</span><span>Payal Popli - EduHub</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navLinks"><span></span><span></span><span></span></button>
+      <div class="nav-links" id="navLinks">
+        <a href="doubt-solver.html">Doubt Solver</a>
+        <a href="timetable.html">Timetable</a>
+        <a class="active" href="resources.html">Resources</a>
+      </div>
+      <button class="theme-toggle" type="button" aria-label="Switch to dark mode" title="Toggle dark mode">Dark</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="resource-intro decorated-section page-decor-resources">
+      <span class="sticker sticker-book" aria-hidden="true">BOOK</span>
+      <span class="sticker sticker-star" aria-hidden="true">TOP</span>
+      <div class="photo-placeholder" aria-label="Payal Popli mam photo placeholder">PP</div>
+      <div>
+        <p class="eyebrow">Affiliate & Recommended Resources</p>
+        <h1>Welcome to Payal Popli mam's resource shelf.</h1>
+        <p>Explore selected books, courses, tools, and mock test series that support stronger concepts and smarter revision.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <article class="featured-resource">
+        <span class="featured-ribbon" aria-hidden="true">TOP PICK</span>
+        <div>
+          <span class="pill light">Most Recommended</span>
+          <h2>Complete Commerce Revision Bundle</h2>
+          <p>A focused set of accountancy practice sheets, business studies notes, economics concept maps, and final-week revision prompts.</p>
+        </div>
+        <a class="btn primary" href="#">Enroll Now</a>
+      </article>
+    </section>
+
+    <section class="section">
+      <div class="filter-row" aria-label="Resource filters">
+        <button class="filter-btn active" data-filter="All" type="button">All</button>
+        <button class="filter-btn" data-filter="Books" type="button">Books</button>
+        <button class="filter-btn" data-filter="Online Courses" type="button">Online Courses</button>
+        <button class="filter-btn" data-filter="Study Tools" type="button">Study Tools</button>
+        <button class="filter-btn" data-filter="Mock Test Series" type="button">Mock Test Series</button>
+      </div>
+      <div class="resource-grid" id="resourceGrid"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div><strong>Payal Popli - EduHub</strong><p>Contact: hello@payalpoplieduhub.com | +91 00000 00000</p></div>
+    <div class="social-links"><a href="#">IG</a><a href="#">YT</a><a href="#">IN</a></div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
