@@ -26,29 +26,29 @@
 }
 
 [data-theme="dark"] {
-  --purple-900: #f3edff;
-  --purple-700: #b48cff;
-  --purple-600: #c3a3ff;
-  --purple-100: #2c2145;
-  --ink: #f7f3ff;
-  --muted: #c8bed9;
-  --line: #3a2f4f;
+  --purple-900: #ffffff;
+  --purple-700: #e0d0ff;
+  --purple-600: #d0c0ff;
+  --purple-100: #3a2f4f;
+  --ink: #ffffff;
+  --muted: #d0c0ff;
+  --line: #4a3f5f;
   --white: #ffffff;
   --page: #0f0d16;
-  --surface: #171321;
-  --header-bg: rgba(15, 13, 22, 0.92);
-  --nav-text: #e6dcf7;
-  --field-bg: #211a30;
-  --mint: #153c32;
-  --gold: #4a3a16;
-  --rose: #4a1f32;
-  --sky: #172d4c;
-  --aqua: #153c32;
+  --surface: #1a1527;
+  --header-bg: rgba(15, 13, 22, 0.95);
+  --nav-text: #e0d0ff;
+  --field-bg: #2a2437;
+  --mint: #2d5a50;
+  --gold: #5a4a20;
+  --rose: #5a2f42;
+  --sky: #2a3a5a;
+  --aqua: #2d5a50;
   --lemon: #ffd166;
   --coral: #ff8585;
   --pink-pop: #ff9aca;
-  --card-strip: linear-gradient(90deg, #b48cff, #ff9aca, #ffd166, #8ef0c4);
-  --shadow: 0 18px 45px rgba(0, 0, 0, 0.34);
+  --card-strip: linear-gradient(90deg, #e0d0ff, #ff9aca, #ffd166, #8ef0c4);
+  --shadow: 0 18px 45px rgba(0, 0, 0, 0.5);
 }
 
 * {
@@ -137,8 +137,8 @@ textarea {
 
 .nav-links a:hover,
 .nav-links a.active {
-  color: var(--purple-900);
-  background: var(--purple-100);
+  color: var(--white);
+  background: var(--purple-700);
   transform: translateY(-2px);
 }
 
@@ -179,7 +179,8 @@ textarea {
 }
 
 .theme-toggle:hover {
-  background: var(--purple-100);
+  background: var(--purple-700);
+  color: var(--white);
   transform: scale(1.05);
 }
 
@@ -286,7 +287,8 @@ textarea {
 }
 
 .btn.secondary:hover {
-  background: var(--purple-100);
+  background: var(--purple-700);
+  color: var(--white);
 }
 
 .btn.full {
@@ -536,6 +538,7 @@ h3 {
   pointer-events: none;
   z-index: 1;
   animation: float 3.5s ease-in-out infinite;
+  color: var(--coral);
 }
 
 .sticker-question {
@@ -736,7 +739,8 @@ input:focus {
 }
 
 .bookmark-btn:hover {
-  background: var(--purple-100);
+  background: var(--purple-700);
+  color: var(--white);
   transform: scale(1.1);
 }
 
@@ -864,10 +868,11 @@ input:focus {
   padding: 10px;
   text-align: left;
   vertical-align: top;
+  color: var(--ink);
 }
 
 .timetable th {
-  background: var(--purple-900);
+  background: var(--purple-700);
   color: var(--white);
   font-family: "Poppins", sans-serif;
   font-weight: 800;
@@ -884,6 +889,7 @@ input:focus {
   cursor: pointer;
   transition: box-shadow 0.2s ease, transform 0.2s ease;
   position: relative;
+  background: var(--surface);
 }
 
 .slot-cell:hover {
