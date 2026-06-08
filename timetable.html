@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Timetable Planner | Payal Popli - EduHub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="brand-mark">PP</span><span>Payal Popli - EduHub</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navLinks"><span></span><span></span><span></span></button>
+      <div class="nav-links" id="navLinks">
+        <a href="doubt-solver.html">Doubt Solver</a>
+        <a class="active" href="timetable.html">Timetable</a>
+        <a href="resources.html">Resources</a>
+      </div>
+      <button class="theme-toggle" type="button" aria-label="Switch to dark mode" title="Toggle dark mode">Dark</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero compact decorated-section page-decor-plan">
+      <span class="sticker sticker-plan" aria-hidden="true">PLAN</span>
+      <span class="sticker sticker-score" aria-hidden="true">100</span>
+      <p class="eyebrow">Timetable & Schedule Planner</p>
+      <h1>Build a week that actually works.</h1>
+      <p class="quote" id="dailyQuote">Small steps every day create big scores.</p>
+    </section>
+
+    <section class="section planner-actions">
+      <button class="btn primary" id="addGoalBtn" type="button">Add Study Goal</button>
+      <button class="btn secondary" id="printBtn" type="button">Print / Export Timetable</button>
+      <div class="subject-legend" aria-label="Subject color guide">
+        <span class="legend-chip accountancy">Accountancy</span>
+        <span class="legend-chip economics">Economics</span>
+        <span class="legend-chip business">Business Studies</span>
+        <span class="legend-chip maths">Maths</span>
+        <span class="legend-chip english">English</span>
+      </div>
+      <div class="goal-list" id="goalList" aria-live="polite"></div>
+    </section>
+
+    <section class="section table-shell">
+      <div class="table-scroll" aria-label="Weekly timetable planner">
+        <table class="timetable" id="timetable"></table>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div><strong>Payal Popli - EduHub</strong><p>Contact: hello@payalpoplieduhub.com | +91 00000 00000</p></div>
+    <div class="social-links"><a href="#">IG</a><a href="#">YT</a><a href="#">IN</a></div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

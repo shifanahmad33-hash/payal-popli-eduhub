@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Doubt Solver | Payal Popli - EduHub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="brand-mark">PP</span><span>Payal Popli - EduHub</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navLinks"><span></span><span></span><span></span></button>
+      <div class="nav-links" id="navLinks">
+        <a class="active" href="doubt-solver.html">Doubt Solver</a>
+        <a href="timetable.html">Timetable</a>
+        <a href="resources.html">Resources</a>
+      </div>
+      <button class="theme-toggle" type="button" aria-label="Switch to dark mode" title="Toggle dark mode">Dark</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero decorated-section page-decor-doubt">
+      <span class="sticker sticker-question" aria-hidden="true">Q?</span>
+      <span class="sticker sticker-score" aria-hidden="true">A+</span>
+      <p class="eyebrow">Student Doubt Solver</p>
+      <h1>Ask clearly. Revise faster.</h1>
+      <p>Submit academic doubts, receive a helpful mock response, save important answers, and search your growing doubt bank.</p>
+    </section>
+
+    <section class="section two-column">
+      <form class="tool-card" id="doubtForm">
+        <span class="corner-sticker" aria-hidden="true">ASK</span>
+        <div class="form-row">
+          <label for="subject">Subject</label>
+          <select id="subject" required>
+            <option>Accountancy</option>
+            <option>Economics</option>
+            <option>Business Studies</option>
+            <option>Maths</option>
+            <option>English</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <label for="question">Your doubt</label>
+          <textarea id="question" rows="8" placeholder="Type your question here..." required></textarea>
+        </div>
+        <button class="btn primary full" type="submit">Submit Doubt</button>
+      </form>
+
+      <div class="tool-card">
+        <span class="corner-sticker alt" aria-hidden="true">SAVE</span>
+        <div class="card-title-row">
+          <div>
+            <p class="eyebrow">Answered Doubts</p>
+            <h2>Doubt Bank</h2>
+          </div>
+          <span class="pill" id="doubtCount">0 saved</span>
+        </div>
+        <label class="sr-only" for="doubtSearch">Search doubts</label>
+        <input class="search-input" id="doubtSearch" type="search" placeholder="Search previously asked doubts">
+        <div class="answer-list" id="answerList" aria-live="polite"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div><strong>Payal Popli - EduHub</strong><p>Contact: hello@payalpoplieduhub.com | +91 00000 00000</p></div>
+    <div class="social-links"><a href="#">IG</a><a href="#">YT</a><a href="#">IN</a></div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
